@@ -35,6 +35,7 @@ class Node:
                 raise TypeError('next_node must be a node object')
             self.__next_node = value
 
+
 class SinglyLinkedList:
     '''Linked list class'''
 
@@ -66,7 +67,7 @@ class SinglyLinkedList:
         else:
             current = self.head
             while(current.next_node is not None and
-                current.next_node.data < new_node.data):
+                  current.next_node.data < new_node.data):
                 current = current.next_node
 
             new_node.next_node = current.next_node
