@@ -1,0 +1,18 @@
+5-text_indentation:
+=============================
+Check if the import is correct:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Check is text is str:
+	>>> text_indentation(12)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Check if not None:
+	>>> text_indentation(None)
+
+Check correct output:
+	>>> text_indentation("Hola.Mundo")
+	Hola.
+	<BLANKLINE>
+	Mundo

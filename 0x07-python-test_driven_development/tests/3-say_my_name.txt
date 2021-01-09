@@ -1,0 +1,22 @@
+3-say_my_name.py:
+=============================
+Check if the import is correct:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Check if first name is string:
+	>>> say_my_name(12, 'hola')
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+Check if last name is string:
+	>>> say_my_name('hola', 12)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+Check if don't send last name:
+	>>> say_my_name("hola")
+	My name is hola 
+
+Check a correct output:
+	>>> say_my_name("jaime", "castro")
+	My name is jaime castro
