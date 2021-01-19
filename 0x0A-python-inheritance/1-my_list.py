@@ -13,3 +13,6 @@ class MyList(list):
 
     def print_sorted(self):
         '''print sorted list'''
+        new = list.copy(self)
+        list.sort(new)
+        print(new)
